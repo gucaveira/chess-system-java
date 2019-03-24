@@ -41,7 +41,7 @@ public class ChessMacth {
 	}
 	
 	private void validateSourcePosition(Position position) {
-		if(!board.positionExists(position)){
+		if(!board.thereIsAPiece(position)){
 			throw new ChessException("There is no piece on source position");
 		}
 	}
